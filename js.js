@@ -62,7 +62,7 @@ async function apiRequest(searchCountry='cairo') {
     
     console.log(searchCountry);
      
-    var api = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=5be13e84c50b45349cb83840242008&q=${searchCountry}&days=7`)
+    var api = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=5be13e84c50b45349cb83840242008&q=${searchCountry}&days=7`)
     apiReady = await api.json()
 
     // apiTemp7Days()
